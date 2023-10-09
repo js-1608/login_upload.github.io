@@ -5,6 +5,7 @@ import {ImMusic} from "react-icons/im"
 import {PostMainCompTypes} from "../types";
 import {AiFillHeart} from "react-icons/ai";
 import PostMainLikes from './PostMainLikes'
+import Upload from '../upload/pages';
 
 export default function PostMain({post}:PostMainCompTypes)
 {
@@ -59,7 +60,7 @@ export default function PostMain({post}:PostMainCompTypes)
                         src={post?.video_url}
                         />
                         <img
-                        className='absolute right-2 bottom-10'
+                        className="absolute right-2 bottom-10"
                         width="90"
                         src="/images/tiktok-logo-white.png"
                         />
@@ -67,6 +68,7 @@ export default function PostMain({post}:PostMainCompTypes)
 
                     
                     <PostMainLikes post={post}/>
+                    {/* <Upload></Upload> */}
 
                 </div>
             </div>
@@ -74,6 +76,9 @@ export default function PostMain({post}:PostMainCompTypes)
         </>
 
     )
+    // return(
+    //     <Upload></Upload>
+    // )
 }
 
 

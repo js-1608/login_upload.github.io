@@ -1,6 +1,7 @@
 import {usePathname} from "next/navigation"
 import TopNav from "./TopNav"
 import SideNavMain from "./SideNavMain"
+import Upload from "../upload/pages"
 export default function MainLayout(
     {children}:{children:React.ReactNode})
     {
@@ -12,6 +13,7 @@ export default function MainLayout(
             <SideNavMain/>
             {children}
             </div>
+            {/* <Upload/> */}
          </div>
         )
     } 

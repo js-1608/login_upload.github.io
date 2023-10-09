@@ -33,6 +33,11 @@ profile:{
   image:string,
 }
 }
+export interface UploadError{
+    type:string;
+    message:string;
+    
+}
 
 /////////////////
 //compnenttypes
