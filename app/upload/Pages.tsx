@@ -1,11 +1,12 @@
-"use client"
+"use cleint"
 import { useRouter } from "next/router"
-import { useState } from "react";
+import { use, useState } from "react";
 import { UploadError } from "../types";
 import UplaodLayout from "../layouts/UploadLayout";
 import {  BiLoaderCircle, BiSolidCloudUpload } from "react-icons/bi";
 import {  AiOutlineCheckCircle } from "react-icons/ai";
 import { PiKnifeLight} from "react-icons/pi";
+import ClientOnly from "../components/ClientOnly";
 
 export default function Upload()
 {
@@ -179,7 +180,7 @@ export default function Upload()
                                 <div className="flex items-center justify-between">
 
                                     <div className="mb-1 text-[15px]">caption</div>
-                                    <div className="text-gray-400 text-[12px]">{caption.length}/150</div>
+                                    {/* <div className="text-gray-400 text-[12px]">{caption.length}/150</div> */}
                                 </div>
                                 <input 
                                 maxLength={150}

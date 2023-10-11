@@ -5,7 +5,7 @@ import {ImMusic} from "react-icons/im"
 import {PostMainCompTypes} from "../types";
 import {AiFillHeart} from "react-icons/ai";
 import PostMainLikes from './PostMainLikes'
-import Upload from '../upload/pages';
+import Upload from '../upload/Pages';
 
 export default function PostMain({post}:PostMainCompTypes)
 {
@@ -21,6 +21,11 @@ export default function PostMain({post}:PostMainCompTypes)
             observer.observe(PostMainElement);
         }
     },[])
+
+    // return (
+    //     <Upload/>
+    //     // <Upload/>
+    // )
     return (
         <>
         <div id={`PostMain-${post.id}`} className="flex border-b py-6">
